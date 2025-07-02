@@ -10,14 +10,8 @@
   background-color: rgba(32, 20, 96, 0.6);
 }
 
-.error-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 550px; 
-}
-
 .error-message {
+  margin:0.5rem;
   background-color: rgba(255, 0, 0, 0.1);
   color: red;
   padding: 1rem 1.5rem;
