@@ -31,7 +31,7 @@ function App() {
     try {
       const result = await loadWeatherData(searchQuery);
       if (result.cod === "404") {
-        setError("City not found.\nTry searching for a correct city.");
+        setError("City not found.");
         // searchResult(null);
       } else {
         setSearchResult(result);
@@ -55,9 +55,7 @@ function App() {
         ></SearchBar>
         {error && (
           <div className="error-message">
-            {error.split("\n").map((line, index) => (
-              <div key={index}>{line}</div>
-            ))}
+            {error}
           </div>
         )}
 
