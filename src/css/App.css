@@ -33,4 +33,7 @@ box-sizing: border-box;
   .main-content{
     padding:1rem;
   }
+  .app-box{
+    margin-bottom:5rem;
+  }
 }
