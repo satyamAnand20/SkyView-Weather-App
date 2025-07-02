@@ -1,0 +1,284 @@
+.result-area-main{
+    margin-top:2.5rem;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width:100%;
+    color: aliceblue;
+    gap:0;
+    
+}
+
+.weather-degree{
+    text-align: center;
+    color:aliceblue;
+    font-size: 3rem;
+    
+}
+
+.weather-icon {
+  width: 30%;
+  height: auto;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.weather-icon img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: contain;
+}
+
+.weather-description{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.place-time{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:2.5rem;
+    width: 100%;
+    color: white;
+
+}
+
+.time{
+    font-size: 1.3rem;
+    padding-top: 0.3rem;
+}
+
+
+.city{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap:0.3rem;
+    
+}
+
+.place{
+    font-size: 2rem;
+}
+
+.city-icon{
+    font-size:1.7rem;
+    padding-top:0.5rem
+}
+
+.humidity-wind-info{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top:2.5rem;
+    color: white;
+    width:100%;
+}
+
+.humidity{
+    display: flex;
+    align-items: center;
+    width:45%;
+    gap:0.5rem;
+}
+
+.humidity-percent{
+    font-size: 1.5rem;
+}
+
+.humidity-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.humidity-img img {
+  width: 47px;
+  height: auto;
+  display: block;
+}
+
+
+.wind {
+  display: flex;
+  align-items: center;
+  min-width: 0; 
+  gap: 0.5rem;
+}
+
+.wind-km {
+  font-size: 1.5rem;
+}
+
+.wind-img{
+    width:60%;
+    height: auto;
+}
+
+.wind-img img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* media queries */
+
+@media(max-width:637px){
+    .weather-icon{
+        width:35%;
+    }
+}
+
+@media(max-width:543px){
+    .place-time{
+        display: flex;
+        flex-direction: column;
+    }
+    .city{
+        margin-right:0.8rem;
+    }
+    .weather-icon{
+        width: 40%;
+    }
+}
+
+
+
+
+@media(max-width:480px){
+    .result-area-main{
+        display: flex;
+        flex-direction: column;
+    }
+    .humidity-wind-info{
+        margin-top: 4rem;
+    }
+    .weather-icon{
+        width: 50%;
+        margin-left:0.5rem;
+    }
+    
+    
+}
+
+
+@media(max-width:460px){
+   .wind{
+    display: flex;
+    flex-direction: column;
+   }
+   .humidity{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:0.5rem;
+   }
+   .humidity-img{
+    margin-left: 0.7rem;
+   }
+   .humidity-percent{
+    text-align: center;
+   }
+   .weather-icon{
+        width: 60%;
+        margin-left:0.5rem;
+    }
+    .humidity-img{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: auto;
+        
+    }
+    .humidity-img img{
+        width: 45%;
+        height: auto;
+        display: block;
+        margin:0.2rem 0 0 0.3rem !important;
+        padding: 0 !important;
+        object-fit: contain;
+    }
+    .wind-word{
+        text-align: center;
+    }
+   
+}
+
+@media(max-width:424px){
+    .humidity-img{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin:0rem 0rem 0rem 0.2rem !important;
+        padding: 0 !important;
+        height: auto;
+        
+    }
+    .humidity-img img{
+        width: 52%;
+        height: auto;
+        display: block;
+        margin:0rem 0rem 0rem 0.2rem !important;
+        padding: 0 !important;
+        object-fit: contain;
+    }
+    
+
+}
+
+@media(max-width:400px){
+    .weather-icon{
+        width:65%
+    }
+    humidity-img{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin:0.1rem 0rem 0rem 0.1rem !important;
+        padding: 0 !important;
+        height: auto;
+        
+    }
+    .humidity-img img{
+        width: 55%;
+        height: auto;
+        display: block;
+        margin:0.1rem 0rem 0rem 0.1rem !important;
+        padding: 0 !important;
+        object-fit: contain;
+    }
+
+    
+}
+
+@media(max-width:377px){
+    .humidity-img{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin:0.1rem 0rem 0rem 0.1rem !important;
+        padding: 0 !important;
+        height: auto;
+        
+    }
+    .humidity-img img{
+        width: 60%;
+        height: auto;
+        display: block;
+        margin:0.1rem 0rem 0rem 0.1rem !important;
+        padding: 0 !important;
+        object-fit: contain;
+    }
+}
+
+
