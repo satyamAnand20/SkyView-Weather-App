@@ -35,6 +35,7 @@ function App() {
         setSearchResult(null);
       } else {
         setSearchResult(result);
+        setError(null);
       }
     } catch (err) {
       console.log("Error in searching: ", err);
