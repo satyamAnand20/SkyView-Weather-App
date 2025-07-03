@@ -29,7 +29,7 @@ function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      const result = await loadWeatherData(searchQuery);
+      const result = await loadWeatherData(searchQuery.trim());
       if (result.cod === "404") {
         setError("City not found.");
         // searchResult(null);
